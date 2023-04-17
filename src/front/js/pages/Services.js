@@ -122,8 +122,12 @@ const Services = () => {
         coupled with more than 75 combined years of ownership and operation of
         commercial and residential properties. These professionals provide the
         wisdom, insight and analysis that only a real estate professional can to
-        navigate through the most complicated real estate issues. INVESTMENTS As
-        long-time owners and investors—throughout all market conditions and
+        navigate through the most complicated real estate issues.
+      </p>
+      <hr className="new1" />
+      <h1> INVESTMENTS </h1>{" "}
+      <p className="services">
+        As long-time owners and investors—throughout all market conditions and
         cycles—Capital Realty is a trusted and respected commercial real estate
         investor. Our focus is on opportunistic real estate acquisitions that
         deliver unprecedented value to our investors/partners.

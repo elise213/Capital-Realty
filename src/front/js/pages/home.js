@@ -11,11 +11,10 @@ export const Home = () => {
 
   return (
     <div>
-      <Video />
       <div className="welcome">
-        {/* <div className="overlay"> */}
+        <Video />
+
         <img className="home-logo" src={logo}></img>
-        {/* </div> */}
       </div>
       <div className="page-container">
         <div className="row">
@@ -24,7 +23,8 @@ export const Home = () => {
             <h3>WHAT WE DO</h3>
           </div>
           <div className="col-9">
-            <p className="services">
+            <h3>CAPITAL REALTY SERVICES INC.</h3>
+            <p className="about">
               We provide a myriad of services in the real estate sector. Sales &
               Acquisition, Mortgage Brokerage, Investment, Tenant Representation
               & Site Selection, Leasing & Property/Asset Management as well as
@@ -51,8 +51,9 @@ export const Home = () => {
           </div>
           <div className="col-9">
             <div>
-              <h3>Robert Berrin</h3>
-              <p className="services">
+              <h3>ROBERT BERRIN</h3>
+              {/* <h5>PRESIDENT | CO-OWNER</h5> */}
+              <p className="about">
                 {" "}
                 Robert G. Berrin is a real estate investor and the President and
                 Co-Owner of Capital Realty Services, Inc. (since October 1988),
@@ -70,14 +71,15 @@ export const Home = () => {
                 properties, together with his business partner in Capital
                 Realty, Isaac K. Fisher.
               </p>
-              <a href={"/bio/1"} class="btn bio-btn">
+              <a href={"/bio/1"} className="btn bio-btn">
                 Learn More About Robert
               </a>
             </div>
             <hr className="new1" />
             <div>
-              <h3>Isaac Fisher</h3>
-              <p className="services">
+              <h3>ISAAC FISHER</h3>
+              {/* <h5>CO-OWNER</h5> */}
+              <p className="about">
                 {" "}
                 Mr. Fisher is a real estate investor and a principal of Capital
                 Realty Services, Inc., a diversified real estate company
@@ -90,7 +92,7 @@ export const Home = () => {
                 Florida and in Tel Aviv, Israel. He is a member of the Florida
                 Bar, and an inactive member of the Israel Chamber of Advocates.
               </p>
-              <a href={"/bio/2"} class="btn bio-btn">
+              <a href={"/bio/2"} className="btn bio-btn">
                 Learn More About Isaac
               </a>
             </div>

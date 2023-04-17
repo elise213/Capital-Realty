@@ -10,7 +10,9 @@ const BioInfo = (props) => {
       <h3 className="bio-title">{props.title}</h3>
       {props.num == "1" ? (
         <div>
-          <img className="bio-img" src={berrin} alt="profile picture" />
+          <span className="img-span">
+            <img className="bio-img" src={berrin} alt="profile picture" />
+          </span>
           <p className="bio-text">
             <p className="services">
               Robert G. Berrin is a real estate investor and the President and

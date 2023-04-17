@@ -3,7 +3,7 @@ import React from "react";
 const Properties = () => {
   return (
     <div className="page-container">
-      <h1>OUR PROPERTIES</h1>
+      <h1>CURRENT PROPERTIES</h1>
       <p className="services">Dadeland Executive Plaza – Miami, FL</p>
       <p className="services">Ponce Plaza Office Building – Coral Gables, FL</p>
       <p className="services">
@@ -13,6 +13,7 @@ const Properties = () => {
       <p className="services">Wendy’s Restaurant Net Lease – Memphis, TN</p>
       <p className="services">Mavis Tire Center Net Lease – Bradenton, FL</p>
       <p className="services">Red Lobster Net Lease – Austin, TX</p>
+      <h1>PAST PROPERTIES</h1>
       <p className="services">Kendall Summit Office Park – Miami, FL</p>
       <p className="services">Doral Executive Office Building – Miami, FL</p>
       <p className="services">

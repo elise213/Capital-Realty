@@ -3,82 +3,89 @@ body {
   margin: 0;
   height: 100%;
 }
+
+.home-logo {
+  width: 60%;
+  position: absolute;
+  /* top: 20; */
+  z-index: 3;
+}
+.contact-page {
+  margin: 200px 50px 75px;
+}
+
+label {
+  font-family: Open Sans, Arial, sans-serif;
+}
 .video {
   width: 100%;
   object-fit: cover;
   filter: brightness(55%);
 }
-.home-logo {
-  width: 500px;
-}
-.overlay {
-  /* position: absolute; */
-  display: flex;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 20%;
-  background-color: rgba(0, 0, 0, 0.4);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 0;
-  border-radius: 3%;
-}
-
 .welcome {
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: absolute;
-  top: 0;
+  position: relative;
   display: flex;
   font-family: "Urbanist", sans-serif;
   justify-content: center;
   align-items: center;
-  color: white;
   object-fit: cover;
 }
 .page-container {
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 100px 30px -90px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 100vb; */
   min-height: 100%;
-  margin-bottom: -90px;
   padding-bottom: 190px;
-  margin-top: 100px;
 }
 .principals-container {
-  /* margin: 30px; */
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: center;
   height: 100vb;
-  margin-bottom: -90px;
-  margin-top: 100px;
+  margin: 10px 30px -90px;
+}
+
+.map {
+  border-radius: 50%;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  background: #000;
 }
 
 footer {
   bottom: 0;
   width: 100%;
   height: 90px;
-  background-color: #0b2945;
   background-color: white;
-  /* color: #ffd740; */
   letter-spacing: 2px;
   font-family: Open Sans, Arial, sans-serif;
 }
+
+p.about {
+  font-family: Open Sans, Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
 p.services {
   font-family: Open Sans, Arial, sans-serif;
   /* font-family: "Urbanist", sans-serif; */
   letter-spacing: 2px;
-  /* margin: 30px; */
+  margin: 0px 30px 0px;
+  padding: 20px;
+  font-size: 17px;
 }
+
 h1 {
   /* font-family: "Urbanist", sans-serif; */
   font-family: Open Sans, Arial, sans-serif;
@@ -87,7 +94,7 @@ h1 {
   margin-top: 15px;
 }
 hr.new1 {
-  border: 2px solid grey;
+  border: 1.5px solid black;
   width: 100%;
 }
 
@@ -130,9 +137,13 @@ hr.new1 {
   margin-bottom: 3px;
   border-radius: 3%;
   /* border: solid 1px #0b2945; */
-  height: 15rem;
-  width: 15rem;
+  /* max-height: 10%;  */
+  /* width: 15rem; */
+  transform: scale(0.8);
   object-fit: cover;
+}
+.active {
+  color: lightgreen !important;
 }
 
 .bio-name {
@@ -186,15 +197,8 @@ p.bio-text {
   color: #0b2945;
 }
 
-.home-logo-2 {
-  width: 200px;
-  height: 90px;
-}
-
 .bio-btn {
-  /* background-color: lightgray; */
   background-color: white;
-  /* border: solid 1px #0b2945; */
   border: solid 1px #0b2945;
   color: #0b2945;
   border-radius: 4%;
@@ -234,7 +238,6 @@ p.bio-text {
 
 .nav-btn {
   font-family: "Urbanist", sans-serif;
-  /* color: #ffd740; */
   letter-spacing: 2px;
   color: white;
 }
@@ -244,6 +247,13 @@ p.bio-text {
   text-decoration: underline;
   /* color: #ffc400; */
 }
+
+.nav-btn:avtive {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ffc400;
+}
+
 .navbar-logo:hover {
   cursor: pointer;
 }
@@ -252,36 +262,19 @@ p.bio-text {
   height: 70px;
   object-fit: cover;
 }
-.nav-profile-icon {
-  font-size: x-large;
-  margin-left: 5px;
-  color: black;
-}
 
 /* ---logReg--- */
-.logRegBtnModalCont {
+
+.overlay {
   display: flex;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.4);
   justify-content: center;
-}
-.logRegBtnModalCont button {
-  width: 100%;
-}
-.logReggobackbtn {
-  text-decoration: none;
-}
-.logReggobackbtn:hover {
-  cursor: pointer;
-  color: lightgreen;
-}
-.avatarImages {
-  font-size: 4rem;
-  object-fit: cover;
-  transition: 0.5;
-}
-.avatarImages:hover {
-  font-size: 5rem;
-  cursor: pointer;
-}
-.avatarImageSelected {
-  font-size: 5rem;
+  align-items: center;
+  flex-direction: column;
+  z-index: 0;
+  border-radius: 3%;
 }
