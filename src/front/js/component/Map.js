@@ -13,15 +13,15 @@ export const Map = () => {
   });
 
   // Define the Marker component
-  const Marker = () => (
-    <div style={{ color: "red" }}>
-      <i className="fa-solid fa-location-dot fa-2xl"></i>
-    </div>
-  );
+  // const Marker = () => (
+  //   <div style={{ color: "red" }}>
+  //     <i className="fa-solid fa-location-dot fa-2xl"></i>
+  //   </div>
+  // );
 
   return (
     <div>
-      <div className="map" style={{ height: "50vh", width: "100%" }}>
+      <div className="map">
         <GoogleMapReact
           // Put the google API key here!!
           bootstrapURLKeys={{ key: "AIzaSyDOhqYOYIXvrk8lt2HQQLI8cS1O8FnZt9I" }}

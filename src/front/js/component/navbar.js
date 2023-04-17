@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../img/CAPITALRLOGO.png";
 
 export const Navbar = () => {
-  function handleActive(event) {
+  useEffect(() => {
+    setActiveBtn();
+    window.addEventListener("popstate", setActiveBtn); // call setActiveBtn on URL change
+    return () => {
+      window.removeEventListener("popstate", setActiveBtn); // clean up event listener
+    };
+  }, []);
+
+  function setActiveBtn() {
     const navBtns = document.querySelectorAll(".nav-btn");
-    navBtns.forEach((item) => {
-      item.classList.remove("active");
+    const currentUrl = window.location.pathname;
+
+    navBtns.forEach((btn) => {
+      const btnUrl = btn.getAttribute("href");
+      if (btnUrl === currentUrl) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
     });
-    event.currentTarget.classList.add("active");
   }
 
   return (
@@ -43,32 +57,24 @@ export const Navbar = () => {
           {/* Links */}
           <div className="ml-auto"></div>
           <span className="nav-item">
-            <Link to="/">
-              <span className="btn nav-btn" onClick={handleActive}>
-                HOME
-              </span>
-            </Link>
+            <a href="/" className="btn nav-btn">
+              HOME
+            </a>
           </span>
           <span className="nav-item">
-            <Link to="/properties">
-              <span className="btn nav-btn" onClick={handleActive}>
-                PORTFOLIO
-              </span>
-            </Link>
+            <a href="/properties" className="btn nav-btn">
+              PORTFOLIO
+            </a>
           </span>
           <span className="nav-item">
-            <Link to="/services">
-              <span className="btn nav-btn" onClick={handleActive}>
-                SERVICES
-              </span>
-            </Link>
+            <a href="/services" className="btn nav-btn">
+              SERVICES
+            </a>
           </span>
           <span className="nav-item">
-            <Link to="/contact">
-              <span className="btn nav-btn" onClick={handleActive}>
-                CONTACT
-              </span>
-            </Link>
+            <a href="/contact" className="btn nav-btn">
+              CONTACT
+            </a>
           </span>
         </div>
       </div>

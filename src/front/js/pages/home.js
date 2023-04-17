@@ -20,7 +20,7 @@ export const Home = () => {
         <div className="row">
           <div className="col-3 d-flex justify-content-center">
             {/* <img className="home-logo-2" src={logo2}></img> */}
-            <h3>WHAT WE DO</h3>
+            {/* <h2>WHAT WE DO</h2> */}
           </div>
           <div className="col-9">
             <h3>CAPITAL REALTY SERVICES INC.</h3>
@@ -47,7 +47,7 @@ export const Home = () => {
         <hr className="new1" />
         <div className="row">
           <div className="col-3 d-flex justify-content-center">
-            <h3>LEADERSHIP</h3>
+            <h2>LEADERSHIP</h2>
           </div>
           <div className="col-9">
             <div>

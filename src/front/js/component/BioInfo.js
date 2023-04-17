@@ -7,12 +7,11 @@ const BioInfo = (props) => {
   return (
     <div className="bio-container">
       <h1 className="bio-name">{props.name}</h1>
-      <h3 className="bio-title">{props.title}</h3>
+      <h2 className="bio-title">{props.title}</h2>
       {props.num == "1" ? (
         <div>
-          <span className="img-span">
-            <img className="bio-img" src={berrin} alt="profile picture" />
-          </span>
+          <img className="bio-img" src={berrin} alt="profile picture" />
+
           <p className="bio-text">
             <p className="services">
               Robert G. Berrin is a real estate investor and the President and
@@ -85,7 +84,9 @@ const BioInfo = (props) => {
               Directors Alumni of AIPAC and is the past Chair of the Greater
               Miami Jewish Federation.
             </p>
-            <p>He resides in Miami, Florida and Tel Aviv, Israel.</p>
+            <p className="services">
+              He resides in Miami, Florida and Tel Aviv, Israel.
+            </p>
           </p>
         </div>
       )}
