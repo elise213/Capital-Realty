@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../img/CAPITALRLOGO3.png";
+import logo from "../../img/CAPITALRLOGO.png";
 
 export const Navbar = () => {
   return (
@@ -34,11 +34,11 @@ export const Navbar = () => {
         >
           {/* Links */}
           <div className="ml-auto"></div>
-          <span className="nav-item">
+          {/* <span className="nav-item">
             <Link to="/principals">
               <span className="btn nav-btn">TEAM</span>
             </Link>
-          </span>
+          </span> */}
           <span className="nav-item">
             <Link to="/properties">
               <span className="btn nav-btn">PORTFOLIO</span>

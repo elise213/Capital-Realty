@@ -77,7 +77,7 @@ p.services {
   font-family: Open Sans, Arial, sans-serif;
   /* font-family: "Urbanist", sans-serif; */
   letter-spacing: 2px;
-  margin: 30px;
+  /* margin: 30px; */
 }
 h1 {
   /* font-family: "Urbanist", sans-serif; */
@@ -143,14 +143,12 @@ hr.new1 {
 
 p.bio-text {
   text-align: justify;
-  font-size: 23px;
+  font-size: 17px;
   letter-spacing: 1px;
   margin: 60px;
-  color: darkgray;
   padding-top: 20px;
   font-family: Open Sans, Arial, sans-serif;
   letter-spacing: 2px;
-  color: #0b2945;
 }
 
 .bio-col-1 {
@@ -188,11 +186,16 @@ p.bio-text {
   color: #0b2945;
 }
 
+.home-logo-2 {
+  width: 200px;
+  height: 90px;
+}
+
 .bio-btn {
   /* background-color: lightgray; */
   background-color: white;
   /* border: solid 1px #0b2945; */
-  border: none;
+  border: solid 1px #0b2945;
   color: #0b2945;
   border-radius: 4%;
   font-family: "Urbanist", sans-serif;
