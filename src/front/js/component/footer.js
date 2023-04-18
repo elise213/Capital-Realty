@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 export const Footer = () => (
   <footer className="footer mt-auto py-3 text-center">
-    <div>
+    {/* <div>
       <p>YOU HAVE A GOAL. WE WILL HELP YOU REACH IT.</p>
-    </div>
+    </div> */}
     <div className="">
       <span className="me-5">
         <i className="fas fa-phone me-3"></i>

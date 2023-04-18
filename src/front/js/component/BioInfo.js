@@ -7,13 +7,14 @@ const BioInfo = (props) => {
   return (
     <div className="bio-container">
       <h1 className="bio-name">{props.name}</h1>
-      <h2 className="bio-title">{props.title}</h2>
+      {/* <h2 className="bio-title">{props.title}</h2> */}
       {props.num == "1" ? (
         <div>
-          <img className="bio-img" src={berrin} alt="profile picture" />
+
 
           <p className="bio-text">
             <p className="services">
+              <img className="bio-img" src={berrin} alt="profile picture" />
               Robert G. Berrin is a real estate investor and the President and
               Co-Owner of Capital Realty Services, Inc. (since October 1988), a
               full service commercial real estate brokerage firm, specializing
@@ -56,10 +57,11 @@ const BioInfo = (props) => {
         </div>
       ) : (
         <div>
-          <img className="bio-img" src={fisher} alt="profile picture" />
+
           <p className="bio-text">
             {" "}
             <p className="services">
+              <img className="bio-img" src={fisher} alt="profile picture" />
               Isaac “Ike” K. Fisher grew up in Hollywood, Florida. He came to
               live and work in Miami after graduating from the University of
               Florida College of Law, previously receiving his undergraduate
