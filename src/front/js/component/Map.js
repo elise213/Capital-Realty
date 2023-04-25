@@ -13,11 +13,11 @@ export const Map = () => {
   });
 
   // Define the Marker component
-  // const Marker = () => (
-  //   <div style={{ color: "red" }}>
-  //     <i className="fa-solid fa-location-dot fa-2xl"></i>
-  //   </div>
-  // );
+  const Marker = () => (
+    <div style={{ color: "red" }}>
+      <i className="fa-solid fa-location-dot fa-2xl"></i>
+    </div>
+  );
 
   return (
     <div>
@@ -28,13 +28,13 @@ export const Map = () => {
           center={city.center}
           defaultZoom={14}
         >
-          {/* <Marker
-            lat={latitude}
-            lng={longitude}
+          <Marker
+            lat={lat}
+            lng={lng}
             color="red"
             // text={result.name}
             // key={i}
-          /> */}
+          />
         </GoogleMapReact>
       </div>
     </div>
