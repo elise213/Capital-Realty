@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import Video from "../component/Video";
-import logo from "../../img/CAPITALRLOGO7.png";
-import logo2 from "../../img/CAPITALRLOGO6.png";
+import logo from "../../img/CAPITALREALTY3.png";
 
 import "../../styles/home.css";
 
@@ -17,13 +16,10 @@ export const Home = () => {
         <img className="home-logo" src={logo}></img>
       </div>
       <div className="page-container">
-        <div className="row">
-          <div className="col-3 d-flex justify-content-center">
-            {/* <img className="home-logo-2" src={logo2}></img> */}
-            {/* <h2>WHAT WE DO</h2> */}
-          </div>
-          <div className="col-9">
-            <h3>CAPITAL REALTY SERVICES INC.</h3>
+        <div className="home-row-1">
+          <div className="small-col lg-only">{""}</div>
+          <div className="lg-col">
+            <h3 className="text-center">CAPITAL REALTY SERVICES INC.</h3>
             <p className="about">
               We provide a myriad of services in the real estate sector. Sales &
               Acquisition, Mortgage Brokerage, Investment, Tenant Representation
@@ -45,13 +41,19 @@ export const Home = () => {
           </div>
         </div>
         <hr className="new1" />
-        <div className="row">
-          <div className="col-3 d-flex justify-content-center">
-            <h2>LEADERSHIP</h2>
+        <div className="home-row-1">
+          <div className="small-col lg-only">
+            <p className="col-header">LEADERSHIP</p>
           </div>
-          <div className="col-9">
+          <div className="lg-col">
             <div>
-              <h3>ROBERT BERRIN</h3>
+              <div className="sm-only">
+                {" "}
+                <h2 className="text-center sm-only">LEADERSHIP</h2>{" "}
+                <hr className="new1" />
+              </div>
+
+              <h3 className="text-center">ROBERT BERRIN</h3>
               {/* <h5>PRESIDENT | CO-OWNER</h5> */}
               <p className="about">
                 {" "}
@@ -77,7 +79,7 @@ export const Home = () => {
             </div>
             <hr className="new1" />
             <div>
-              <h3>ISAAC FISHER</h3>
+              <h3 className="text-center">ISAAC FISHER</h3>
               {/* <h5>CO-OWNER</h5> */}
               <p className="about">
                 {" "}

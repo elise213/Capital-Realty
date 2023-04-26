@@ -5,16 +5,50 @@ body {
 }
 
 .home-logo {
-  width: 60%;
+  width: 85%;
   position: absolute;
   /* top: 20; */
   z-index: 3;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
 .contact-page {
   display: flex;
   flex-direction: row;
-  margin: 180px 50px 75px;
+  height: 20%;
+  width: 80%;
+}
+
+.contact-form-2 {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.map-container {
+  width: 100%;
+  padding: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.contact-logo {
+  width: 50%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.col-header {
+  font-size: 30px;
+  color: darkgray;
 }
 
 label {
@@ -24,7 +58,7 @@ label {
 .video {
   width: 100%;
   object-fit: cover;
-  filter: brightness(55%);
+  filter: brightness(40%);
 }
 
 .welcome {
@@ -60,15 +94,8 @@ label {
   width: 100%;
 }
 
-.circle {
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
-  border-radius: 50%;
-  font-size: 10px;
-  color: #fff;
-  text-align: center;
-  background: #000;
+.current-props-title {
+  margin-top: 30px;
 }
 
 footer {
@@ -78,7 +105,7 @@ footer {
   background-color: transparent;
   letter-spacing: 2px;
   font-family: Open Sans, Arial, sans-serif;
-  color: #0b2945;
+  color: darkgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,17 +114,15 @@ footer {
 p.about {
   font-family: Open Sans, Arial, sans-serif;
   letter-spacing: 2px;
+  padding-bottom: 20px;
 }
 
 p.services {
   font-family: Open Sans, Arial, sans-serif;
-  /* font-family: "Urbanist", sans-serif; */
   letter-spacing: 2px;
   margin: 20px 90px 20px;
   font-size: 17px;
 }
-
-
 
 hr.new1 {
   border: 1.5px solid black;
@@ -145,6 +170,22 @@ hr.new1 {
   object-fit: cover;
 }
 
+.small-col {
+  display: flex;
+  width: 20%;
+  height: 100%;
+}
+
+.lg-col {
+  width: 80%;
+}
+
+.home-row-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 h1 {
   /* font-family: "Urbanist", sans-serif; */
   font-family: Open Sans, Arial, sans-serif;
@@ -161,18 +202,8 @@ h3 {
   color: #0b2945;
 }
 
-
-
 row {
   padding: 0;
-}
-
-.contact-form-2 {
-  width: 50%;
-}
-
-.map-container {
-  width: 50%;
 }
 
 .properties-text {
@@ -181,13 +212,23 @@ row {
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 992px) {
+.property-image {
+  width: 60%;
+  border-radius: 1%;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1020px) {
   .bio-img {
     width: 200px;
   }
 
   p.bio-text {
     margin: 10px 10px 10px 15px !important;
+  }
+
+  .small-col {
+    display: none;
   }
 
   .services {
@@ -202,28 +243,27 @@ row {
     font-size: 20px;
   }
 
-  .contact-page {
-    margin: 180px 30px 0px;
-    flex-direction: column !important;
-    align-items: center;
-  }
-
-  .contact-form-2 {
-    width: 75%;
-  }
-
   .map-container {
     display: none;
   }
+  .lg-only {
+    display: none;
+  }
+  .sm-only {
+    display: block !important;
+  }
 }
 
-.row>* {
+.row > * {
   padding: 2px;
 }
 
 @media screen and (max-width: 500px) {
   .bio-img {
     width: 200px;
+  }
+  .lg-only {
+    display: none;
   }
 
   p.bio-text {
@@ -241,18 +281,19 @@ row {
 
   h2 {
     font-size: 13px;
-    ;
   }
 
   h3 {
     font-size: 14px;
     text-decoration: underline;
   }
-
+  .sm-only {
+    display: block !important;
+  }
+  .small-col {
+    display: none;
+  }
 }
-
-
-
 
 .active {
   /* color: lightgreen !important; */
@@ -324,9 +365,22 @@ p.bio-text {
   font-size: 14px;
 }
 
+.send-btn {
+  color: white;
+  background-color: #0b2945;
+  border-radius: 5%;
+  font-family: "Urbanist", sans-serif;
+  padding: 5px;
+  font-size: 14px;
+}
+
 .bio-btn:hover {
   color: white;
   background-color: #0b2945;
+}
+
+.sm-only {
+  display: none;
 }
 
 .card-img {
