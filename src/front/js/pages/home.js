@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import Video from "../component/Video";
-import logo from "../../img/CAPITALREALTY3.png";
+// import logo from "../../img/CAPITALREALTY3.png";
+import logo from "../../img/CAPITALR38.png";
 
 import "../../styles/home.css";
 

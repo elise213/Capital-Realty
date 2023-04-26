@@ -5,10 +5,10 @@ body {
 }
 
 .home-logo {
-  width: 85%;
+  width: 75%;
   position: absolute;
-  /* top: 20; */
   z-index: 3;
+  opacity: 95%;
 }
 
 .contact-container {
@@ -43,7 +43,7 @@ p {
 .contact-logo {
   width: 50%;
   margin-bottom: 25px;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .col-header {
@@ -58,7 +58,7 @@ label {
 .video {
   width: 100%;
   object-fit: cover;
-  filter: brightness(40%);
+  filter: brightness(65%);
 }
 
 .welcome {
@@ -295,8 +295,12 @@ row {
   }
 }
 
+.not-home {
+  color: black !important;
+  background-color: white !important;
+}
+
 .active {
-  /* color: lightgreen !important; */
   text-decoration: underline;
 }
 
@@ -407,7 +411,8 @@ p.bio-text {
   padding-left: 15px;
   font-family: "Urbanist", sans-serif;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-color: transparent;
 }
 
 .nav-btn {

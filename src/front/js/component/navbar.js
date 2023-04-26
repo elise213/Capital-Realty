@@ -13,7 +13,14 @@ export const Navbar = () => {
 
   function setActiveBtn() {
     const navBtns = document.querySelectorAll(".nav-btn");
+    const navBar = document.querySelector("#navbar");
     const currentUrl = window.location.pathname;
+
+    if (currentUrl !== "/") {
+      navBar.classList.add("not-home");
+    } else {
+      navBar.classList.remove("not-home");
+    }
 
     navBtns.forEach((btn) => {
       const btnUrl = btn.getAttribute("href");
@@ -22,19 +29,21 @@ export const Navbar = () => {
       } else {
         btn.classList.remove("active");
       }
+      if (currentUrl !== "/") {
+        btn.classList.add("not-home");
+      } else {
+        btn.classList.remove("not-home");
+      }
     });
   }
 
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-expand-md navbar-light mb-3"
-      id="navbar"
-    >
+    <nav className="navbar navbar-expand-lg navbar-expand-md mb-3" id="navbar">
       {/* Navbar Brand Logo - Link to Home - Always Visible*/}
       <div className="container-fluid">
         <Link to="/">
           <span className="navbar-brand">
-            <img className="navbar-logo" src={logo}></img>
+            {/* <img className="navbar-logo" src={logo}></img> */}
           </span>
         </Link>
         {/* Dynamic Navbar collapse-expand */}
